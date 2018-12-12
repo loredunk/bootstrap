@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>美食</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script></head>
+	<link rel="stylesheet" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css"></link>
+	<script type="text/javascript" src="../bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<style>
+.navbar-brand {
+	padding: 0px;
+}
+
+.navbar-default {
+	background: none;
+	border: none;
+	
+}
+
+.navbar-collapse ul li:hover {
+	background-color: #888;
+}
+.carousel{
+	width:64%;
+	margin:auto;
+}
+.item{
+width:100%;
+height:100%;
+}
+#body{
+text-align:center;
+}
+.tab-content img{
+	padding:25px;
+	width:290px;
+	height:250px;
+	margin:auto;
+	text-align:center;
+	
+}
+#footer{
+text-align:center;
+}
+.media-left img{
+	width:435px;
+	height:375px;
+}
+
+}
+</style>
+
+
+<body>
+    <div class="container">
+    <div id="top">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="../bimages/logo.jpg" alt="Brand"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="#">首页 <span
+									class="sr-only">(current)</span>
+							</a>
+							</li>
+							<li><a href="#">菜谱</a>
+							</li>
+							<li><a href="#">食材</a>
+							</li>
+							<li><a href="#">社区</a>
+							</li>
+							<li><a href="#">圈子</a>
+							</li>
+							
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">专题<span class="caret"></span>
+							</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a>
+									</li>
+									<li><a href="#">Another action</a>
+									</li>
+									<li><a href="#">Something else here</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">One more separated link</a>
+									</li>
+								</ul></li>
+						</ul>
+						<form class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+						
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</div>
+		<div id="body">
+			<!--轮播图-->
+			<div id="carousel-example-generic" class="carousel slide"
+				data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0"
+						class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="../bimages/food05.jpg" alt="...">
+						<div class="carousel-caption">
+							<h3>海鲜类</h3>
+							<p>好吃的贝贝</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../bimages/food02.jpg" alt="...">
+						<div class="carousel-caption">...</div>
+					</div>
+					<div class="item">
+						<img src="../bimages/food03.jpg" alt="...">
+						<div class="carousel-caption">...</div>
+					</div>
+					<div class="item">
+						<img src="../bimages/food04.jpg" alt="...">
+						<div class="carousel-caption">...</div>
+					</div>
+				
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic"
+					role="button" data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span> </a> <a
+					class="right carousel-control" href="#carousel-example-generic"
+					role="button" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span> </a>
+			</div>
+
+			<!-- 标签页 -->
+			<div>
+
+
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home"
+						aria-controls="home" role="tab" data-toggle="tab">新秀菜谱</a>
+					</li>
+					<li role="presentation"><a href="#profile"
+						aria-controls="profile" role="tab" data-toggle="tab">一周热门</a>
+					</li>
+					<li role="presentation"><a href="#messages"
+						aria-controls="messages" role="tab" data-toggle="tab">最受欢迎家常菜</a>
+					</li>
+			
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="home">
+					<table>
+					<tr>
+					<td><img src="../bimages/food06.jpg"><p>红烧排骨</p></td>
+					<td><img src="../bimages/food07.jpg"><p>烧鹅</p></td>
+					<td><img src="../bimages/food08.jpg"><p></p></td>
+					<td><img src="../bimages/food09.jpg"><p></p></td>
+					</tr>
+					<tr>
+					<td><img src="../bimages/food10.jpg"><p></p></td>
+					<td><img src="../bimages/food11.jpg"><p></p></td>
+					<td><img src="../bimages/food12.jpg"><p></p></td>
+					<td><img src="../bimages/food13.jpg"><p></p></td>
+					</tr>
+					</table>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="profile">
+					<table >
+					<tr>
+					<td><img src="../bimages/food14.jpg" class="img-circle"></td>
+					<td><h2>宫保鸡丁</h2>
+					宫保鸡丁（Kung Pao Chicken），是一道闻名中外的特色传统名菜。鲁菜、川菜、贵州菜中都有收录，原料、做法有差别。该菜式的起源与鲁菜中的酱爆鸡丁，和贵州菜的胡辣子鸡丁有关，后被清朝山东巡抚、四川总督丁宝桢改良发扬，形成了一道新菜式——宫保鸡丁，并流传至今，此道菜也被归纳为北京宫廷菜 。之后宫保鸡丁也流传到国外。
+					<hr style="width:103%; text-align:center;vertical-align:middle"/>
+					</td>
+					</tr>
+					
+					
+					<tr>
+					<td><img src="../bimages/food15.jpg"  class="img-circle"></td>
+					<td><h2>蚂蚁上树</h2>
+					蚂蚁上树（Sauteed Vermicelli with minced Pork） ，又名肉末粉条，是四川省及重庆市的特色传统名菜之一。因肉末贴在粉丝上，形似蚂蚁爬在树枝上而得名。这道菜具体的历史，已不可考。但在四川省、重庆市一带，该菜很常见。
+					<hr style="width:103%; text-align:center;vertical-align:middle"/>
+					</td>
+					</tr>
+					</table>
+				
+					
+					</div>
+					<div role="tabpanel" class="tab-pane" id="messages">
+						<div class="jumbotron">							
+						<div class="media">
+						<div class="media-left">
+							<a href="#"> <img src="../bimages/food16.jpg"></a>							
+						</div>
+						<div class="media-body">
+							<h1 class="media-heading">葱香烤鱼</h1>
+							<p>烤鱼（Grilled fish），是一道菜品。制作原料主要有鱼、蘑菇、番茄等。它是指鱼类经过烤制之后然后进行烹饪的一种方法，这种烹调方式实现了“一烤二炖”。烤鱼，一种发源于重庆巫溪县，而发扬于万州的特色美食，在流传过程中，融合腌、烤、炖三种烹饪工艺技术，充分借鉴传统渝菜及重庆火锅用料特点，是口味奇绝、营养丰富的风味小吃。</p>
+						</div>
+						</div>
+						
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="footer">
+		<address>
+			<strong>Wechat, Inc.</strong><br> 濂希区255号九江学院, 文友楼<br>
+			jiu jiang city, Peace<br> <abbr title="Phone">P:</abbr> (123)
+			12345679
+		</address>
+
+		<address>
+			<strong>E-mail</strong><br> <a href="mailto:#">chanlovelife@163.com</a>
+		</address>
+
+	</div>
+    
+  </body>
+</html>
